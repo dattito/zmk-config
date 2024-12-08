@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -31,10 +32,10 @@
 
         arrows {
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH        &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS        &kp ASTRK     &trans           &trans    &trans
-&trans  &trans    &trans  &kp UNDERSCORE  &kp MINUS  &kp PLUS     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &trans
-&trans  &trans    &trans  &trans          &trans     &kp EQUAL    &trans          &kp GRAVE       &kp TILDE     &trans           &kp PIPE  &trans
-                          &trans          &trans     &trans       &trans          &trans          &trans
+&bt BT_NXT  &kp EXCL  &kp AT  &kp HASH        &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS        &kp ASTRK     &trans           &trans    &trans
+&bt BT_PRV  &trans    &trans  &kp UNDERSCORE  &kp MINUS  &kp PLUS     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &trans
+&trans      &trans    &trans  &trans          &trans     &kp EQUAL    &trans          &kp GRAVE       &kp TILDE     &trans           &kp PIPE  &trans
+                              &trans          &trans     &trans       &trans          &trans          &trans
             >;
         };
     };
